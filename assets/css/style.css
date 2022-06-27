@@ -1,0 +1,310 @@
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --clr-primary: #060507;
+    --clr-secondary: #ffff;
+    --clr-accent1: #3F3E44;
+    --clr-accent2: #A75B12;
+}
+
+
+
+body {
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+    font-family: "syne";
+    height: 20vh;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 70%;
+    width: 20%;
+
+}
+
+
+.quart {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+    width: 100%;
+    height: 23%;
+}
+
+.transform_text {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+h2 {
+
+
+    -webkit-transform: rotate(-90deg);
+
+
+    -moz-transform: rotate(-90deg);
+
+    -ms-transform: rotate(-90deg);
+
+    -o-transform: rotate(-90deg);
+
+    width: 120px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #3F3E44;
+
+}
+
+h3{
+    font-size: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 80%;
+    padding-left: 15%;
+
+
+}
+
+
+.info>p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 8px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+svg {
+    position: absolute;
+    top: 120px;
+    left: 660px;
+    fill: currentColor;
+    height: auto;
+    max-width: 15vmin;
+    transform-origin: center;
+    width: 66%;
+    z-index: 8;
+    letter-spacing: 3px;
+    font-weight: 300;
+    animation-name: rotate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+h1 {
+    font-family: "syne";
+    font-weight: 800;
+    font-style: extra;
+}
+
+.head_nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.background_head {
+    height: 40vh;
+    width: 45vw;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    width: 70vw;
+    height: 15vh;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+    width: 100%;
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+    padding-left: 40px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-secondary);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--clr-accent2);
+}
+
+.nav_logo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.logo {
+    height: 20px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+main {
+
+    position: absolute;
+    top: 18vh;
+    height: calc(100vh - 18vh);
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section_image {
+    display: flex;
+    flex-direction: column;
+    height: 82vh;
+    width: 100%;
+
+}
+
+
+.image_moto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50vh;
+    width: 100%;
+}
+
+.image1 {
+    background-image: url("../images/image\ 3.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 60%;
+}
+
+
+.image2 {
+    background-image: url("../images/photo\ 2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 25%;
+}
+
+.line-writing {
+    position: relative;
+    margin-top: -70px;
+    z-index: 2;
+}
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+
+}
+
+#file {
+    height: 5px;
+
+}
+
+progress {
+    opacity: 100%;
+    accent-color: #A75B12;
+}
+
+
+.footer_elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.text_progress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.text {
+    width: 40%;
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: justify;
+    color: var(--clr-secondary);
+}
+
+.photo_moto3 {
+    height: 100%;
+    width: 25%;
+
+}
